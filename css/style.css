@@ -17,6 +17,10 @@ img{
     display: flex;
 }
 
+.slide:hover{
+    will-change: transform;
+}
+
 .slide-wrapper{
     overflow: hidden;
 }
@@ -26,4 +30,14 @@ img{
     width: 80vw;
     max-width: 800px;
     margin: 0 20px;
+    opacity: 0.8;
+    border-radius: 4px;
+    overflow: hidden;
+    transform: scale(0.9);
+    transition: .4s;
+}
+
+.slide li.active{
+    opacity: 1;
+    transform: scale(1);
 }
